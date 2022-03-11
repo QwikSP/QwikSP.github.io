@@ -1,0 +1,10 @@
+---
+layout: post
+title: Notes for Tech Talks
+subtitle: my notes and plans for notes
+---
+plans for notes... 
+Take notes on key words and record their definitions. Record any useful tips as well
+
+Notes for TT will go under here...
+

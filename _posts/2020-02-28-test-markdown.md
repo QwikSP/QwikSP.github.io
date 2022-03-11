@@ -1,78 +1,132 @@
----
-layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
----
+[//]: # (---)
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+[//]: # (layout: post)
 
-**Here is some bold text**
+[//]: # (title: Sample blog post)
 
-## Here is a secondary heading
+[//]: # (subtitle: Each post also has a subtitle)
 
-Here's a useless table:
+[//]: # (gh-repo: daattali/beautiful-jekyll)
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+[//]: # (gh-badge: [star, fork, follow])
 
+[//]: # (tags: [test])
 
-How about a yummy crepe?
+[//]: # (comments: true)
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+[//]: # (---)
 
-It can also be centered!
+[//]: # ()
+[//]: # (This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown]&#40;https://markdowntutorial.com/&#41; - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.)
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
+[//]: # ()
+[//]: # (**Here is some bold text**)
 
-Here's a code chunk:
+[//]: # ()
+[//]: # (## Here is a secondary heading)
 
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
+[//]: # ()
+[//]: # (Here's a useless table:)
 
-And here is the same code with syntax highlighting:
+[//]: # ()
+[//]: # (| Number | Next number | Previous number |)
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
+[//]: # (| :------ |:--- | :--- |)
 
-And here is the same code yet again but with line numbers:
+[//]: # (| Five | Six | Four |)
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
+[//]: # (| Ten | Eleven | Nine |)
 
-## Boxes
-You can add notification, warning and error boxes like this:
+[//]: # (| Seven | Eight | Six |)
 
-### Notification
+[//]: # (| Two | Three | One |)
 
-{: .box-note}
-**Note:** This is a notification box.
+[//]: # ()
+[//]: # ()
+[//]: # (How about a yummy crepe?)
 
-### Warning
+[//]: # ()
+[//]: # (![Crepe]&#40;https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg&#41;)
 
-{: .box-warning}
-**Warning:** This is a warning box.
+[//]: # ()
+[//]: # (It can also be centered!)
 
-### Error
+[//]: # ()
+[//]: # (![Crepe]&#40;https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg&#41;{: .mx-auto.d-block :})
 
-{: .box-error}
-**Error:** This is an error box.
+[//]: # ()
+[//]: # (Here's a code chunk:)
+
+[//]: # ()
+[//]: # (~~~)
+
+[//]: # (var foo = function&#40;x&#41; {)
+
+[//]: # (  return&#40;x + 5&#41;;)
+
+[//]: # (})
+
+[//]: # (foo&#40;3&#41;)
+
+[//]: # (~~~)
+
+[//]: # ()
+[//]: # (And here is the same code with syntax highlighting:)
+
+[//]: # ()
+[//]: # (```javascript)
+
+[//]: # (var foo = function&#40;x&#41; {)
+
+[//]: # (  return&#40;x + 5&#41;;)
+
+[//]: # (})
+
+[//]: # (foo&#40;3&#41;)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (And here is the same code yet again but with line numbers:)
+
+[//]: # ()
+[//]: # ({% highlight javascript linenos %})
+
+[//]: # (var foo = function&#40;x&#41; {)
+
+[//]: # (  return&#40;x + 5&#41;;)
+
+[//]: # (})
+
+[//]: # (foo&#40;3&#41;)
+
+[//]: # ({% endhighlight %})
+
+[//]: # ()
+[//]: # (## Boxes)
+
+[//]: # (You can add notification, warning and error boxes like this:)
+
+[//]: # ()
+[//]: # (### Notification)
+
+[//]: # ()
+[//]: # ({: .box-note})
+
+[//]: # (**Note:** This is a notification box.)
+
+[//]: # ()
+[//]: # (### Warning)
+
+[//]: # ()
+[//]: # ({: .box-warning})
+
+[//]: # (**Warning:** This is a warning box.)
+
+[//]: # ()
+[//]: # (### Error)
+
+[//]: # ()
+[//]: # ({: .box-error})
+
+[//]: # (**Error:** This is an error box.)
