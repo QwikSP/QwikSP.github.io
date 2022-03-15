@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Structures Work
+title: Data Structures Work!
 subtitle: my work related to data structures
 ---
 [Run Time](https://replit.com/@Qwiks/CSATri3#Main.java)
