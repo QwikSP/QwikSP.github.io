@@ -14,11 +14,15 @@ author: Some Person
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Notes for Tech Talks: "https://qwiksp.github.io/2022-03-10-tt-notes/"
+  Test Prep Plans: "https://qwiksp.github.io/2022-03-10-test-prep-plans/"
+  Data Structures Work:
+    - Week 0 - Menu, IntByRefernce, Matrix: "https://qwiksp.github.io/2022-03-10-data-structures/"
+    - Week 1 - Challenge 1, 2, 3: "https://qwiksp.github.io/2022-03-10-data-structures/"
+  Review Tickets:
+    - Week 0: "https://github.com/wrachel/PrimitiveApes/issues/10"
+    - Week 1: "https://github.com/wrachel/PrimitiveApes/issues/10"
+
 
 # --- Logo --- #
 
