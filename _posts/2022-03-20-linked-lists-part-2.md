@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linked Lists Part 2
+title: Week 1 Challenge 1,2,3
 subtitle: work for linked lists part 2
 ---
 [Run Time](https://replit.com/@Qwiks/CSATri3#Main.java)
