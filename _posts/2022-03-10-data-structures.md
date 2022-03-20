@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Structures Work!
-subtitle: my work related to data structures
+title: Week 0 Challenge 1 ,2 ,3
+subtitle: week 0 challenges
 ---
 [Run Time](https://replit.com/@Qwiks/CSATri3#Main.java)
 

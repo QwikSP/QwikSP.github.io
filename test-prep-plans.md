@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pages
 title: Test Prep Plans
 subtitle: how I plan to prepare for success on the AP exam
 ---
