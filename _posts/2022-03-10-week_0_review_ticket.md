@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Review Tickets
-subtitle: my work related to data structures
+title: Week 0 review ticket
+subtitle: review ticket
 ---
 [Week 0 Review Ticket](https://github.com/wrachel/PrimitiveApes/issues/10)
