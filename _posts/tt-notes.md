@@ -10,6 +10,17 @@ Notes for TT will go under here...
 
 [3/15 Linked Lists Notes](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
 
+> **_Linked Lists:_**  linked lists are lists that are linked in one direction though variables within each object within the list.
+**head** is the first node of the linked list
+**tail** is the last node of the linked list
+the head of the linked list will link to the next node and so on. The last node (tail) will link to null since there isn't anything else after it.
+> **_Doubly Linked Lists:_** these are liked linked lists but the nodes are also linked backwards, towards their previous node.
+A normal linked list will only link to the next node, however a doubly linked lists's node will link to both it's next node and it's previous node.
+
+
+
+
+
 Linked lists are datastructures
 
 They have lists
