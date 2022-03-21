@@ -16,7 +16,7 @@ Notes for TT will go under here...
 the head of the linked list will link to the next node and so on. The last node (tail) will link to null since there isn't anything else after it.
 > **_Doubly Linked Lists:_** these are liked linked lists but the nodes are also linked backwards, towards their previous node.
 A normal linked list will only link to the next node, however a doubly linked lists's node will link to both it's next node and it's previous node.
-
+> **_The Java Generic T_** is a generic type of perameter for the class it is added to. It will generally appear at the end of the class name with < >. 
 
 
 
