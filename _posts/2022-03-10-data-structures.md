@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Week 0 Challenge 1 ,2 ,3
 subtitle: week 0 challenges
 ---
