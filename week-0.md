@@ -10,7 +10,7 @@ subtitle: week 0 challenges
 2. [IntByReference](https://github.com/QwikSP/CSA-Tri-3/blob/master/src/main/java/com/example/sping_portfolio/controllers/IntByReference.java)
 3. [Matrix](https://github.com/QwikSP/CSA-Tri-3/blob/master/src/main/java/com/example/sping_portfolio/controllers/Matrix.java)
 
-## Menu 
+## Menu
 ```java
 package com.example.sping_portfolio.controllers;
 
@@ -122,7 +122,7 @@ public class IntByReference {
 
 
 
-## Matrix 
+## Matrix
 ```java
 package com.example.sping_portfolio.controllers;
 
