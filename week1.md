@@ -13,7 +13,7 @@ subtitle: work for linked lists part 2
 
 ## challenge 1
 ```java
-package com.example.sping_portfolio.controllers.LinkedLists2;
+
 
 /**
  *  Implementation of a Double Linked List;  forward and backward links point to adjacent Nodes.
@@ -121,25 +121,25 @@ public class LinkedList<T>
 //    }
 
 }
-
 ```
 ## challenge 2
 ```java
-package com.example.sping_portfolio.controllers.LinkedLists2;
+
 
 public class Sort {
 
     public static void main(String[] args)
     {
-        // Create iterable Queue of Words
+        // Create iterable Queue of numbers
         Object[] number1 = new String[] { "1", "4", "5", "8"};
         Object[] number2 = new String[] { "2", "3", "6", "7"};
 //        QueueManager qNumb1 = new QueueManager("number1", number1);
 //        QueueManager qNumb2 = new QueueManager("number2", number2);
         QueueManager q1 = new QueueManager(number1);
         q1.getQueue();
+        //sorting numbers
         QueueManager q2 = new QueueManager(number2);
-        q2.getQueue();
+        q1.getQueue();
         q1.sort(q2);
 
 
@@ -151,12 +151,13 @@ public class Sort {
 
 ## challenge 3
 ```java
-package com.example.sping_portfolio.controllers.LinkedLists2;
 import java.util.Stack;
 public class stack2 {
 
     static Stack<Integer> st= new Stack<>();
     private int numbers;
+
+//pushing 
 
     public static void push_digits(int number)
     {
@@ -166,7 +167,7 @@ public class stack2 {
             number = number / 10;
         }
     }
-
+    //reverse numbers
     public static String reverse_number(int number)
     {
 
@@ -192,13 +193,14 @@ public class stack2 {
 
     public static void main(String[] args)
     {
+        //create list to be reversed
         Object[] SL = new String[] {"1", "2", "3"};
         QueueManager stac = new QueueManager(SL);
         System.out.println("After: " + reverse_number(stac.getNumbers()));
 
     }
 }
-// This code is contributed by Sumit Ghosh
+
 
 
 ```
