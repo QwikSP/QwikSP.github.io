@@ -8,6 +8,90 @@ Take notes on key words and record their definitions. Record any useful tips as 
 
 Notes for TT will go under here...
 
+## 3/21 notes
+
+1. string become token
+2. token goes to rpm
+3. first 2 numbers go into stack
+4. pop numbers
+5. operator evaluates
+6. next two numbers go into stack
+7. pop numbers
+8. operator evaluates
+
+
+### rpnToResult method
+This java method processes the revers polish notation and calculates the numbers with precedence.
+```java
+        private void rpnToResult()
+        {
+            // Stack used to hold calculation while process RPN
+            Stack calculation = new Stack();
+//            System.out.println(reverse_polish);
+            Double z = 0.0;
+            for (String token : reverse_polish)
+            {
+                //check if token is not operator
+//                System.out.println((token));
+                if (!isOperator(token)) {
+//                    System.out.println((token));
+                    calculation.push(token);
+
+                }
+                else{
+//                    System.out.println(calculation.pop().toString());
+                    Double y = Double.parseDouble(calculation.pop().toString());
+                    Double x = Double.parseDouble(calculation.pop().toString());
+
+                    if (token.equals("*")){
+                        z = x * y;
+                    }
+                    else if (token.equals("/")){
+                        z = x / y;
+                    }
+                    else if (token.equals("+")){
+                        z = x + y;
+                    }
+                    else if (token.equals("-")){
+                        z = x - y;
+                    }
+                    else if (token.equals("%")){
+                        z = x % y;
+                    }
+//                    System.out.println(z);
+                    // Based off of Token operator calculate result
+
+                    // Push result back onto the stack
+                    calculation.push(z);
+                }
+            }
+            // Pop final result and set as final result for expression
+
+            result = Double.parseDouble(calculation.pop().toString());
+        }
+
+    public static void main(String[] args)
+    {
+        Calculator simpleMath = new Calculator("100 + 200  * 3");
+        System.out.println("Simple Math\n" + simpleMath);
+
+        Calculator parenthesisMath = new Calculator("(100 + 200)  * 3");
+        System.out.println("Parenthesis Math\n" + parenthesisMath);
+
+        Calculator allMath = new Calculator("200 % 300 + 5 + 300 / 200 + 1 * 100");
+        System.out.println("All Math\n" + allMath);
+
+        Calculator allMath2 = new Calculator("200 % (300 + 5 + 300) / 200 + 1 * 100");
+        System.out.println("All Math2\n" + allMath2);
+
+//        Calculator allMath3 = new Calculator("200 % sqrt(300 + 5 + 300) / 200 + 1 * 100");
+//        System.out.println("All Math2\n" + allMath2);
+    }
+}
+```
+
+
+
 [3/15 Linked Lists Notes](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
 
 > **_Linked Lists:_**  linked lists are lists that are linked in one direction though variables within each object within the list.
