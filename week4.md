@@ -3,7 +3,7 @@ layout: post
 title: Week 1 Challenge 1,2,3
 subtitle: work for linked lists part 2
 ---
-[Run Time](https://replit.com/@Qwiks/CSATri3#Main.java)
+[Run Time](https://replit.com/github/QwikSP/DataStructures)
 
 ## GitHub Links
 1. [Sort Folder](https://github.com/QwikSP/CSA-Tri-3/tree/master/src/main/java/com/example/sping_portfolio/controllers/Sort)
