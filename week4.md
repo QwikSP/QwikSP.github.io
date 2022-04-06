@@ -9,6 +9,7 @@ subtitle: work for linked lists part 2
 1. [Sort Folder](https://github.com/QwikSP/CSA-Tri-3/tree/master/src/main/java/com/example/sping_portfolio/controllers/Sort)
 
 ## Analysis on the Sorts
+
 | Sort Type | Average runtime with highs and lows | Average runtime with highs and lows omitted | Big O complexity |
 | :---   | :---    | :---    | :---    |
 | Bubble | 0.002327683 | 0.00219408 | O(n²) in worst case; O(n) in the best case | 
