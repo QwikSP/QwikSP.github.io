@@ -14,7 +14,7 @@ author: Some Person
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Notes for Tech Talks: "https://qwiksp.github.io/tt-notes/"
+  Notes for Tech Talks:
     - Week 0: "https://qwiksp.github.io/tt_week0/"
     - Week 1: "https://qwiksp.github.io/tt_week1/"
     - Week 2: "https://qwiksp.github.io/tt_week2/"
