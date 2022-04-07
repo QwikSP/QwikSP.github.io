@@ -1,112 +1,58 @@
 ---
 layout: post
-title: Week 4 Runtime and Code
-subtitle: work for Week 4 challenge
+title: Week 4 notes
+subtitle: 
 ---
-[Run Time](https://replit.com/@Qwiks/DataStructures#.replit)
-
-## GitHub Links
-1. [Sort Folder](https://github.com/QwikSP/CSA-Tri-3/tree/master/src/main/java/com/example/sping_portfolio/controllers/Sort)
-
-## Sort Code
-```java
-public class Sorts {
-    private ArrayList<Integer> data = new ArrayList<>();
-    private final Duration timeElapsed;
-
-    public Sorts(int size) {
-        Instant start = Instant.now();  // time capture -- start
-        // build an array
-        for (int i = 0; i < size; i++) {
-            data.add((int)(Math.random() * (size+1)));
-        }
-        // use Inheritance and Polymorphism to replace data.sort with your own algorithm
-        data = sort(data);
-        Instant end = Instant.now();    // time capture -- end
-        this.timeElapsed = Duration.between(start, end);
-    }
-
-    public ArrayList sort(ArrayList origianl) {
-        return origianl;
-    }
-
-    public ArrayList<Integer> getData() {
-        return data;
-    }
-
-    public int getTimeElapsed() {
-        return timeElapsed.getNano();
-    }
 
 
-    public static void main(String[] args) {
-        int sum=0, time=0, TIMES=12, SIZE=5000;
+## 3/28 notes
 
-        //Bubble Sort
+### Best Sort is Merge Sort
+Most Efficiant with O(log(n))
 
-        System.out.println("\n\n" + "Bubble Sort" + "\n\n");
-        for(int i=0; i< TIMES; i++) {
-            BubbleSort s = new BubbleSort(SIZE);
-            for(int j = 0; j<s.getData().size(); j++) {
-                sum += s.getData().get(j);
-            }
-            time += s.getTimeElapsed();
-        }
-        System.out.println("Average random: " + sum / (TIMES*SIZE));
-        System.out.println("Total Nanoseconds: " + time );
-        System.out.println("Total Seconds: " + time /1000000000.0);
+### Example output
+Selection Sort
 
-        //Selection Sort
-        System.out.println("\n\n" + "Selection Sort" + "\n\n");
-        sum = 0; time=0;
+## Analysis on the Sorts
 
-        for(int i=0; i< TIMES; i++) {
-            SelectionSort s = new SelectionSort(SIZE);
-            for(int j = 0; j<s.getData().size(); j++) {
-                sum += s.getData().get(j);
-            }
-            time += s.getTimeElapsed();
-        }
-        System.out.println("Average random: " + sum / (TIMES*SIZE));
-        System.out.println("Total Nanoseconds: " + time );
-        System.out.println("Total Seconds: " + time /1000000000.0);
+| Sort Type | Average runtime with highs and lows | Average runtime with highs and lows omitted | Big O complexity |
+| :---   | :---    | :---    | :---    |
+| Bubble | 0.002327683 | 0.00219408 | O(n²) in worst case; O(n) in the best case | 
+| Insertion | 0.031171416 | 0.03052125 | O(N^2) in worst case;  O(N) in the best case |
+| Selection | 0.033331483 | 0.0323154 | O(n²) regardless|
+| Merge (Best) | 0.00590485 | 0.00578954 | O(n log n) regardless (most efficient) |
 
-        //Insertion Sort
-        System.out.println("\n\n" + "Insertion Sort" + "\n\n");
-        sum = 0; time=0;
+# of swaps: 4999     # of comparisons: 12497500
+High: 5000   Low: 0
+# of swaps: 4999     # of comparisons: 12497500
+High: 5000   Low: 1
+# of swaps: 4999     # of comparisons: 12497500
+High: 4997   Low: 1
+# of swaps: 4999     # of comparisons: 12497500
+High: 4995   Low: 0
+# of swaps: 4999     # of comparisons: 12497500
+High: 4998   Low: 0
+# of swaps: 4999     # of comparisons: 12497500
+High: 4999   Low: 1
+# of swaps: 4999     # of comparisons: 12497500
+High: 4998   Low: 0
+# of swaps: 4999     # of comparisons: 12497500
+High: 5000   Low: 0
+# of swaps: 4999     # of comparisons: 12497500
+High: 4997   Low: 1
+# of swaps: 4999     # of comparisons: 12497500
+High: 4998   Low: 2
+# of swaps: 4999     # of comparisons: 12497500
+High: 4999   Low: 0
+# of swaps: 4999     # of comparisons: 12497500
+High: 4997   Low: 0
+Average random: 2493
+Total Nanoseconds: 546916700
+Total Seconds: 0.5469167
 
-        for(int i=0; i< TIMES; i++) {
-            InsertionSort s = new InsertionSort(SIZE);
-            for(int j = 0; j<s.getData().size(); j++) {
-                sum += s.getData().get(j);
-            }
-            time += s.getTimeElapsed();
-        }
-        System.out.println("Average random: " + sum / (TIMES*SIZE));
-        System.out.println("Total Nanoseconds: " + time );
-        System.out.println("Total Seconds: " + time /1000000000.0);
-
-        //Merge Sort
-        System.out.println("\n\n" + "Merge Sort" + "\n\n");
-        sum = 0; time=0;
-
-        for(int i=0; i< TIMES; i++) {
-            MergeSort s = new MergeSort(SIZE);
-            for(int j = 0; j<s.getData().size(); j++) {
-                sum += s.getData().get(j);
-            }
-            time += s.getTimeElapsed();
-        }
-        System.out.println("Average random: " + sum / (TIMES*SIZE));
-        System.out.println("Total Nanoseconds: " + time );
-        System.out.println("Total Seconds: " + time /1000000000.0);
-    }
-
-
-}
-```
 ### Bubble Sort
-
+Bubble Sort will swap the previous number with the curent number if the previous number is greater than the current number.
+- o(n)
 ```java
   public ArrayList<Integer> sort(ArrayList original) {
         ArrayList<Integer> temp = new ArrayList<>();
@@ -134,7 +80,8 @@ public class Sorts {
 ```
 
 ### Merge Sort
-
+Merge sort splits an aray in half until the the numbers are alone then it reconstructs the arrays but with the numbers being inputted into the new array in least to greatest order
+- O(nLogn)
 ```java
  public void merge(ArrayList arr, int l, int m, int r)
     {
@@ -229,7 +176,8 @@ public class Sorts {
 
 
 ### Selection Sort
-
+Selection sort swaps the lowest number with the current number over and over until the Array List is sorted
+- Big O notation: O(n2)
 ```java
  public ArrayList<Integer> sort(ArrayList original) {
         ArrayList<Integer> arr;
@@ -260,7 +208,8 @@ public class Sorts {
 
 
 ### Insertion sort
-
+Insertion sort starts from the left and moves the current number to the left until the number to the right of it is greater than the current number.
+- O(n2)
 ```java
 public class InsertionSort extends Sorts {
 

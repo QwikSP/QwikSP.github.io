@@ -15,6 +15,11 @@ author: Some Person
 
 navbar-links:
   Notes for Tech Talks: "https://qwiksp.github.io/tt-notes/"
+    - Week 0: "https://qwiksp.github.io/tt_week0/"
+    - Week 1: "https://qwiksp.github.io/tt_week1/"
+    - Week 2: "https://qwiksp.github.io/tt_week2/"
+    - Week 3: "https://qwiksp.github.io/tt_week3/"
+    - Week 4: "https://qwiksp.github.io/tt_week4/"
   Test Prep Plans: "https://qwiksp.github.io/test-prep-plans/"
   Challenges:
     - Week 0 - Menu, IntByRefernce, Matrix: "https://qwiksp.github.io/week-0/"
