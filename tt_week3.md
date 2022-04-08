@@ -5,7 +5,6 @@ subtitle: Week 3
 ---
 
 
-
 ## 3/28 notes
 
 ### Best Sort is Merge Sort
