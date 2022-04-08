@@ -4,7 +4,7 @@ title: Week 3 notes
 subtitle: Week 3
 ---
 
-
+[Run Time](https://replit.com/github/QwikSP/DataStructures)
 ## 3/28 notes
 
 ### Best Sort is Merge Sort

@@ -5,7 +5,7 @@ subtitle: Week 1
 ---
 
 [3/15 Linked Lists Notes](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
-
+[Run Time](https://replit.com/github/QwikSP/DataStructures)
 
 
 ## Queue code

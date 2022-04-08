@@ -4,6 +4,7 @@ title: Week 2 notes
 subtitle: Week 2
 ---
 
+[Run Time](https://replit.com/github/QwikSP/DataStructures)
 ## 3/21 notes
 
 1. string become token
