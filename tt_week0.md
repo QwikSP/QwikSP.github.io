@@ -1,12 +1,9 @@
-
-
-
-
 ---
-layout: post
+layout: page
 title: Week 0 notes
-subtitle: 
+subtitle: Week 0
 ---
+
 [3/15 Linked Lists Notes](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
 
 > **_Linked Lists:_**  linked lists are lists that are linked in one direction though variables within each object within the list.

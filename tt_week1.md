@@ -1,3 +1,9 @@
+---
+layout: page
+title: Week 1 notes
+subtitle: Week 1
+---
+
 ## 3/21 notes
 
 1. string become token

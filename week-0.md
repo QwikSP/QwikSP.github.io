@@ -3,6 +3,7 @@ layout: page
 title: Week 0 Challenge 1 ,2 ,3
 subtitle: week 0 challenges
 ---
+
 [Run Time](https://replit.com/@Qwiks/CSATri3#Main.java)
 
 ## GitHub Links
