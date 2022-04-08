@@ -6,6 +6,129 @@ subtitle: Week 1
 
 [3/15 Linked Lists Notes](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
 
+
+
+## Queue code
+Queues and dequeues words
+```java
+**public void add(T data) {
+        // add new object to end of Queue
+        LinkedList<T> tail = new LinkedList<>(data, null);
+
+        if (head == null)  // initial condition
+            this.head = this.tail = tail;
+        else {  // nodes in queue
+            this.tail.setNextNode(tail); // current tail points to new tail
+            this.tail = tail;  // update tail
+        }
+
+    }
+    //remove tail
+    public void remove(T data) {
+        LinkedList<T> tail = new LinkedList<>(data, null);
+        if(head == null){
+            throw new RuntimeException("Deque is empty");
+        }
+
+        if(head.getNext() == null){
+            tail = null;
+        }else{
+            // previous of next node (new first) becomes null
+            head.getNext().setPrevNode(tail);
+        }
+        head = head.getNext();
+    }**
+```
+
+## Sort Queue
+Sort the queue when numbers are inputted
+```java
+ public void sort(QueueManager seriesOfObjects) {
+
+    // intialize variables
+        T previous = null;
+        T current = null;
+        //sort
+        ArrayList<Integer> emptyAL = new ArrayList<Integer>();
+        for (T data : queue) {
+            emptyAL.add(Integer.valueOf((String) data));
+        }
+        for (Object data : seriesOfObjects.queue) {
+            emptyAL.add(Integer.valueOf((String) data));
+        }
+        int n = emptyAL.size();
+        for (int i = 1; i < n; ++i) {
+            int key = emptyAL.get(i);
+            int j = i - 1;
+
+            /* Move elements of arr[0..i-1], that are
+               greater than key, to one position ahead
+               of their current position */
+            while (j >= 0 && emptyAL.get(j) > key) {
+                emptyAL.set(j + 1, emptyAL.get(j));
+                j = j - 1;
+            }
+            emptyAL.set(j + 1, key);
+        }
+        System.out.println();
+        for (int data : emptyAL) {
+            System.out.print(data + " -> ");
+        }
+        System.out.print("nil");
+
+
+    }
+```
+
+## Stack
+Stack will reverse the order of the numbers
+```java
+ static Stack<Integer> st= new Stack<>();
+    private int numbers;
+
+    //push all the numbers into the stack
+    public static void push_digits(int number)
+    {
+        while(number != 0)
+        {
+            st.push(number % 10);
+            number = number / 10;
+        }
+    }
+
+    //reverse the order of the numbesr
+    public static String reverse_number(int number)
+    {
+
+        push_digits(number);
+        int reverse = 0;
+        int i = 1;
+
+        while (!st.isEmpty()) {
+            reverse = reverse + (st.peek() * i);
+
+            st.pop();
+            i = i * 10;
+        }
+        String temp = String.valueOf(reverse);
+        String newString = "";
+        for (int j = 0; temp.length() > j; j++) {
+            newString += temp.charAt(j) + " ";
+        }
+
+
+        return newString;
+    }
+
+    public static void main(String[] args)
+    {
+        Object[] SL = new String[] {"1", "2", "3"};
+        QueueManager stac = new QueueManager(SL);
+        System.out.println("After: " + reverse_number(stac.getNumbers()));
+
+    }
+```
+
 > **_Linked Lists:_**  linked lists are lists that are linked in one direction though variables within each object within the list.
 ```java
  public class LinkedList<T>

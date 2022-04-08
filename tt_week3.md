@@ -58,6 +58,7 @@ Bubble Sort will swap the previous number with the curent number if the previous
         ArrayList<Integer> temp = new ArrayList<>();
         temp = original;
         int n = temp.size();
+        //swap the numbers loop
         for (int i = 0; i < n-1; i++)
             for (int j = 0; j < n-i-1; j++)
                 if (temp.get(j) > temp.get(j+1))
@@ -224,12 +225,15 @@ public class InsertionSort extends Sorts {
 
     public ArrayList<Integer> sort(ArrayList original) {
         ArrayList<Integer> arr = new ArrayList<>();
+        //intialize variables
         arr = original;
         int n = arr.size();
+        //for loop until the arary is sorted
         for (int i = 1; i < n; ++i) {
             int key = arr.get(i);
             int j = i - 1;
             while (j >= 0 && arr.get(j) > key) {
+                //swaping numbers
                 swap++;
                 comparison = comparison + 2;
                 arr.set(j + 1, arr.get(j));
