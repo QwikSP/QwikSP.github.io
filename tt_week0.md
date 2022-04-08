@@ -3,6 +3,7 @@ layout: page
 title: Week 0 notes
 subtitle: Week 0
 ---
+[Run Time](https://replit.com/github/QwikSP/DataStructures)
 
 A data structure is a method of organizing data. Think of a variable holding a single integer value(ex: int n=4;) or sequences of numbers(ex: int[] numbers=new int[]{ 1,2,3 };) or tables of data, or databases: these are all well-defined data structures. Data Structures and organizing data will require students to become more algorithmic in coding.
 
