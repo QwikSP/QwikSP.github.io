@@ -16,9 +16,6 @@ author: Some Person
 navbar-links:
 
   Test Prep Plans: "https://qwiksp.github.io/test-prep-plans/"
-  Other:
-    - Study Guide: "https://qwiksp.github.io/StudyPlan/"
-    - FRQ Corrections : "https://qwiksp.github.io/FRQ_Corrections/"
   Notes for Tech Talks:
     - Week 0: "https://qwiksp.github.io/tt_week0/"
     - Week 1: "https://qwiksp.github.io/tt_week1/"
@@ -36,7 +33,9 @@ navbar-links:
     - Week 2: "https://github.com/wrachel/PrimitiveApes/issues/18"
     - Week 3: "https://github.com/QwikSP/CSA-Tri-3/issues/1"
     - Week 4: "https://github.com/QwikSP/CSA-Tri-3/issues/2"
-
+  Other:
+    - Study Guide: "https://qwiksp.github.io/StudyPlan/"
+    - FRQ Corrections : "https://qwiksp.github.io/FRQ_Corrections/"
 
 # --- Logo --- #
 
