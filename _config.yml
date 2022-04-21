@@ -16,6 +16,9 @@ author: Some Person
 navbar-links:
 
   Test Prep Plans: "https://qwiksp.github.io/test-prep-plans/"
+  Other:
+    - Study Guide: "https://qwiksp.github.io/StudyPlan/"
+    - FRQ Corrections : "https://qwiksp.github.io/FRQ_Corrections/"
   Notes for Tech Talks:
     - Week 0: "https://qwiksp.github.io/tt_week0/"
     - Week 1: "https://qwiksp.github.io/tt_week1/"
