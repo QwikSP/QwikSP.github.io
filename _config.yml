@@ -15,7 +15,7 @@ author: Some Person
 
 navbar-links:
 
-  Test Prep Plans: "https://qwiksp.github.io/test-prep-plans/"
+  Test Prep Plans:
   Notes for Tech Talks:
     - Week 0: "https://qwiksp.github.io/tt_week0/"
     - Week 1: "https://qwiksp.github.io/tt_week1/"
@@ -37,6 +37,7 @@ navbar-links:
     - Study Guide: "https://qwiksp.github.io/StudyPlan/"
     - FRQ Corrections : "https://qwiksp.github.io/FRQ_Corrections/"
     - MC Corrections : "https://qwiksp.github.io/MC_Corrections/"
+    - Test Prep Plans : "https://qwiksp.github.io/test-prep-plans/"
 
 # --- Logo --- #
 
