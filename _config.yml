@@ -14,8 +14,6 @@ author: Some Person
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-
-  Test Prep Plans:
   Notes for Tech Talks:
     - Week 0: "https://qwiksp.github.io/tt_week0/"
     - Week 1: "https://qwiksp.github.io/tt_week1/"
